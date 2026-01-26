@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// PascalCase - Toda letra no inicio da palavra incia em caixa alta, restante em caixa baixa, palavras juntas.
+// Exemplo:
+//  App.tsx
+//  HeaderHeading.tsx
+//  ExemploDeComponente.tsx
 
 function App() {
-  const [count, setCount] = useState(0)
+  console.log('Oi');
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <h1>Olá Mundo ! Do APP !</h1>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+        neque repudiandae eum earum ab incidunt, rem quae maxime blanditiis
+        laudantium praesentium obcaecati, distinctio aperiam doloremque, nam
+        voluptatibus totam itaque a. ! Do APP !
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export { App }; // Aqui estamos fazendo o export nomeado, mas podemos fazer assim:
+// export default App; // Exportação que pode sofrer alteração de nome na importação.
