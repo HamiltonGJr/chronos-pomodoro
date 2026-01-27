@@ -4,6 +4,9 @@
 //  HeaderHeading.tsx
 //  ExemploDeComponente.tsx
 
+import './styles/global.css';
+import './styles/theme.css';
+
 function App() {
   console.log('Oi');
 

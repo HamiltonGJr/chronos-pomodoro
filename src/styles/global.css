@@ -1,0 +1,10 @@
+body {
+  background-color: #cecece;
+
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+h1 {
+  color: var(--primary-color);
+}
