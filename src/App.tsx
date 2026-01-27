@@ -16,7 +16,9 @@ function App() {
     <>
       <h1>Olá Mundo ! Do App !</h1>
 
-      <Heading />
+      <Heading attr={123} attr2='String'>
+        Olá Mundo ! Do Heading ! --- ! Via Props !
+      </Heading>
 
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
