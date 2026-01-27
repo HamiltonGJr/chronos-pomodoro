@@ -4,6 +4,7 @@
 //  HeaderHeading.tsx
 //  ExemploDeComponente.tsx
 
+import { TimerIcon } from 'lucide-react';
 import { Heading } from './components/Heading';
 
 import './styles/global.css';
@@ -14,10 +15,11 @@ function App() {
 
   return (
     <>
-      <h1>Olá Mundo ! Do App !</h1>
-
-      <Heading attr={123} attr2='String'>
-        Olá Mundo ! Do Heading ! --- ! Via Props !
+      <Heading>
+        Olá Mundo!
+        <button>
+          <TimerIcon />
+        </button>
       </Heading>
 
       <p>

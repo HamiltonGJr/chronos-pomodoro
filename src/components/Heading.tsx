@@ -1,9 +1,15 @@
+import React from 'react';
+
 import styles from './Heading.module.css';
 
-function Heading(props) {
+type HeadingProps = {
+  children: React.ReactNode;
+};
+
+function Heading({ children }: HeadingProps) {
   return (
     <>
-      <h1 className={`${styles.heading} ${styles.cyan}`}>{props.children}</h1>
+      <h1 className={`${styles.heading} ${styles.cyan}`}>{children}</h1>
     </>
   );
 }
