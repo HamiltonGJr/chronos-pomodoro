@@ -4,6 +4,8 @@
 //  HeaderHeading.tsx
 //  ExemploDeComponente.tsx
 
+import { Heading } from './components/Heading';
+
 import './styles/global.css';
 import './styles/theme.css';
 
@@ -12,7 +14,9 @@ function App() {
 
   return (
     <>
-      <h1>Olá Mundo ! Do APP !</h1>
+      <h1>Olá Mundo ! Do App !</h1>
+
+      <Heading />
 
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
