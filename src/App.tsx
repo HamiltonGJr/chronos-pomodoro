@@ -4,30 +4,35 @@
 //  HeaderHeading.tsx
 //  ExemploDeComponente.tsx
 
-import { TimerIcon } from 'lucide-react';
-import { Heading } from './components/Heading';
-
 import './styles/global.css';
 import './styles/theme.css';
 
 function App() {
-  console.log('Oi');
-
   return (
     <>
-      <Heading>
-        Olá Mundo!
-        <button>
-          <TimerIcon />
-        </button>
-      </Heading>
+      <div className='container'>
+        <div className='content'>
+          <section>LOGO</section>
+        </div>
+      </div>
 
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
-        neque repudiandae eum earum ab incidunt, rem quae maxime blanditiis
-        laudantium praesentium obcaecati, distinctio aperiam doloremque, nam
-        voluptatibus totam itaque a. ! Do APP !
-      </p>
+      <div className='container'>
+        <div className='content'>
+          <section>MENU</section>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='content'>
+          <section>FORMS</section>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='content'>
+          <section>FOOTER</section>
+        </div>
+      </div>
     </>
   );
 }
