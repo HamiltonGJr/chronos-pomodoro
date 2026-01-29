@@ -1,0 +1,18 @@
+import { TimerIcon } from 'lucide-react';
+
+import styles from './styles.module.css';
+
+function Logo() {
+  return (
+    <>
+      <div className={`${styles.logo} ${styles.cyan}`}>
+        <a className={styles.logoLink} href='#'>
+          <TimerIcon />
+          <span>Chronos</span>
+        </a>
+      </div>
+    </>
+  );
+}
+
+export { Logo };
