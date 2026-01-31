@@ -2,12 +2,13 @@ import type React from 'react';
 
 type DefaultInputProps = {
   id: string;
+  labelText?: string;
 } & React.ComponentProps<'input'>;
 
-function DefaultInput({ type, id }: DefaultInputProps) {
+function DefaultInput({ type, id, labelText }: DefaultInputProps) {
   return (
     <>
-      <label htmlFor={id}>Task</label>
+      {labelText && <label htmlFor={id}>{labelText}</label>}
       <input id={id} type={type} />
     </>
   );
