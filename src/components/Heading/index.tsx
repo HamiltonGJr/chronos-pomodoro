@@ -9,7 +9,7 @@ type HeadingProps = {
 function Heading({ children }: HeadingProps) {
   return (
     <>
-      <h1 className={`${styles.heading} ${styles.cyan}`}>{children}</h1>
+      <h1 className={styles.heading}>{children}</h1>
     </>
   );
 }
