@@ -50,7 +50,9 @@ function App() {
             <DefaultButton icon={<PlayCircleIcon />} />
           </div>
         </form>
+      </Container>
 
+      <Container>
         <Footer />
       </Container>
     </>
