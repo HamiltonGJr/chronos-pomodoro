@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { HistoryIcon, HouseIcon, SettingsIcon, SunIcon } from 'lucide-react';
 
 import styles from './styles.module.css';
@@ -20,10 +20,13 @@ function Menu() {
     });
   }
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
   return (
     <>
       <nav className={`${styles.menu} ${styles.cyan}`}>
-        <h1>{theme}</h1>
         <a className={styles.menuLink} href='#' aria-label='Home' title='Home'>
           <HouseIcon />
         </a>
