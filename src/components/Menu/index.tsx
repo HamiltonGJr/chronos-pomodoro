@@ -13,7 +13,11 @@ function Menu() {
   ) {
     event.preventDefault();
 
-    console.log('Clicando', Date.now());
+    setTheme(prevTheme => {
+      const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
+
+      return nextTheme;
+    });
   }
 
   return (
